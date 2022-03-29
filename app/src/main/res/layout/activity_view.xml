@@ -6,10 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".ViewActivity">
 
+    <!--NAME-->
+    <ImageView
+        android:id="@+id/imguser"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgemail"
+        app:layout_constraintEnd_toStartOf="@+id/textlabelname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_user" />
+
     <TextView
-        android:id="@+id/textview_id"
-        android:layout_width="wrap_content"
+        android:id="@+id/textlabelname"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/id" />
+        android:text="Name"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imguser"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--EMAIL-->
+    <ImageView
+        android:id="@+id/imgemail"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintEnd_toStartOf="@id/textlabelemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imguser"
+        app:srcCompat="@drawable/img_mail" />
+
+    <TextView
+        android:id="@+id/textlabelemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgemail"
+        app:layout_constraintTop_toBottomOf="@id/textlabelname" />
+
+
+    <!--PHONE-->
+    <ImageView
+        android:id="@+id/imgphone"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintEnd_toStartOf="@id/textlabelphone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgemail"
+        app:srcCompat="@drawable/img_phone" />
+
+    <TextView
+        android:id="@+id/textlabelphone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgphone"
+        app:layout_constraintTop_toBottomOf="@id/textlabelemail" />
+
+
+    <!--WEBSITE-->
+    <ImageView
+        android:id="@+id/imgwebsite"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintEnd_toStartOf="@id/textlabelwebsite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgphone"
+        app:srcCompat="@drawable/img_website" />
+
+    <TextView
+        android:id="@+id/textlabelwebsite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Website"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgwebsite"
+        app:layout_constraintTop_toBottomOf="@id/textlabelphone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
