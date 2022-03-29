@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Android Profile Viewer</string>
+    <string name="app_name">Profile Viewer</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="phone">PHONE</string>
+    <string name="website">WEBSITE</string>
+    <string name="search">GET USER DETAILS</string>
 </resources>
